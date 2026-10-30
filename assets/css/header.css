@@ -1,0 +1,175 @@
+/* Dashboard Header */
+
+.dashboard-topbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    min-height: 76px;
+    margin: 0;
+    padding: 14px 30px;
+    box-sizing: border-box;
+    flex-shrink: 0;
+
+    background: var(--wis-white, #FFFFFF);
+    border-top: 1px solid #D9D9D9;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.dashboard-topbar>div:first-child {
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 0;
+}
+
+.dashboard-topbar h1 {
+    margin: 0;
+    color: var(--wis-maroon, #8B1E1E);
+    font-family: 'Cinzel', Georgia, serif;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.4;
+    overflow-wrap: anywhere;
+}
+
+.dashboard-topbar .eyebrow {
+    display: block;
+    margin-bottom: 4px;
+    color: #777777;
+    font-family: 'Inter', Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.dashboard-topbar p {
+    margin: 3px 0 0;
+    color: #777777;
+    font-family: 'Inter', Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* Student Account */
+
+.student-account {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    min-width: 0;
+    flex-shrink: 0;
+}
+
+.dashboard-topbar .student-account {
+    flex: 0 0 auto;
+    gap: 10px;
+    margin: 0;
+}
+
+.student-avatar,
+.account-avatar {
+    display: grid;
+    flex-shrink: 0;
+    place-items: center;
+    width: 43px;
+    height: 43px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    background: var(--wis-background);
+    color: var(--wis-maroon);
+    font-weight: 700;
+}
+
+.dashboard-topbar .student-avatar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 40px;
+    width: 40px;
+    height: 40px;
+    background: var(--wis-maroon, #8B1E1E);
+    color: var(--wis-white, #FFFFFF);
+    font-family: 'Inter', Arial, sans-serif;
+    font-size: 14px;
+}
+
+.student-account-info,
+.account-details {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    min-width: 0;
+}
+
+.dashboard-topbar .student-account-info {
+    justify-content: center;
+    gap: 3px;
+}
+
+.student-account-info strong,
+.account-details strong {
+    font-size: 14px;
+}
+
+.student-account-info span,
+.account-details span {
+    color: var(--wis-black);
+    font-size: 14px;
+}
+
+.dashboard-topbar .student-account-info strong {
+    color: var(--wis-black, #171717);
+    font-family: 'Inter', Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.dashboard-topbar .student-account-info span {
+    color: #777777;
+    font-family: 'Inter', Arial, sans-serif;
+    font-size: 14px;
+}
+
+.account-details strong,
+.account-details span {
+    display: block;
+}
+
+.account-details span {
+    margin-top: 4px;
+}
+
+/* Legacy Student Header */
+
+.student-topbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    min-width: 0;
+    margin-bottom: 28px;
+}
+
+.topbar-label {
+    color: var(--wis-maroon);
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+.student-topbar h1 {
+    margin: 7px 0 0;
+    color: var(--wis-maroon-dark);
+    font-family: 'Cinzel', serif;
+    font-size: 30px;
+}
